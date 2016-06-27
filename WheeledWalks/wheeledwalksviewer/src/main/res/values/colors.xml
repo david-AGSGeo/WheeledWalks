@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4caf50</color>
+    <color name="colorPrimaryDark">#1b5e20</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="windowBackground">#c8e6c9</color>
+    <color name="navigationBarColor">#f57f17</color>
+    <color name="colorAccent">#f57f17</color>
+
+    <color name="grade_very_easy">#66bb6a</color>
+    <color name="grade_easy">#26c6da</color>
+    <color name="grade_medium">#ffee58</color>
+    <color name="grade_difficult">#ffa726</color>
+    <color name="grade_extreme">#ef5350</color>
+
+
+
+    <array name="TrackGradient">
+        <item>#00d4e5</item>
+        <item>#00e0a6</item>
+        <item>#00dc59</item>
+        <item>#00d80f</item>
+        <item>#37d400</item>
+        <item>#7bcf00</item>
+        <item>#bccb00</item>
+        <item>#c79300</item>
+        <item>#c34f00</item>
+        <item>#bf0e00</item>
+    </array>
+
+</resources>

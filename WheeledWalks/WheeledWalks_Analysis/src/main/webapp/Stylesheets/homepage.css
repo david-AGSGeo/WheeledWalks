@@ -1,0 +1,70 @@
+body  {
+    background-image: url("/ImageResources/Backgrounds/main_page.JPG");
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+h1 {
+color: red;
+}
+
+.walkCardBackground {
+    border-radius: 10px;
+    overflow: auto;
+    margin: auto;
+    width: 60%;
+    color: black;
+    background-color: #c8e6c9;
+    border: 10px groove #f57f17;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.walkCardImage {
+
+margin: 5px;
+    border: 2px solid black;
+    display: inline-block;
+    float: right;
+
+    width: 40%;
+    height: auto;
+}
+
+.walkCardText {
+
+    float: left;
+    width: 50%;
+
+}
+
+#loading {
+   width: 100px;
+   height: 100px;
+   margin: 150px auto;
+   border-radius: 10px;
+   display: block;
+   opacity: 0.7;
+   background-color: #fff;
+   z-index: 99;
+   text-align: center;
+}
+
+#loading-image {
+ margin: auto;
+  z-index: 100;
+}
+
+.greenButton {
+ display:block;
+ color: #f57f17;
+ margin: 0 auto;
+ border-radius: 10px;
+ padding: 4px;
+ background-color: green;
+ font-size: 20px;
+
+}

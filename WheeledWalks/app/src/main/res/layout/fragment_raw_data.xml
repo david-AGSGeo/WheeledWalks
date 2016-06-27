@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/raw_data_fragment_gps_data_heading"
+
+            android:textSize="18sp" />
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:alignmentMode="alignBounds"
+            android:columnCount="2"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/raw_data_fragment_lattitude_label"
+
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/raw_data_fragment_longitude_label"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/raw_gps_lattitude_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/raw_data_fragment_no_signal_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/raw_gps_longitude_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/raw_data_fragment_no_signal_text"
+                android:textSize="18sp" />
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/raw_data_table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:text="Sensor Data"
+                android:layout_span="3"
+                android:padding="18dip"
+                />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+
+                android:text="Name"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#dcdcdc"
+                android:textColor="#000000"
+                android:padding="10dip"
+                android:gravity="center"/>
+
+            <TextView
+
+                android:text="X"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#d3d3d3"
+                android:textColor="#000000"
+                android:padding="10dip"
+                android:gravity="center"/>
+
+            <TextView
+
+                android:text="Y"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#cccccc"
+                android:textColor="#000000"
+                android:padding="10dip"
+                android:gravity="center"/>
+
+            <TextView
+
+                android:text="Z"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#cac9c9"
+                android:textColor="#000000"
+                android:padding="10dip"
+                android:gravity="center"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</RelativeLayout>

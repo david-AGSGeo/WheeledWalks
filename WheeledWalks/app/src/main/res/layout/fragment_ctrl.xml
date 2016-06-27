@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Device Status"
+            android:textSize="20sp" />
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:alignmentMode="alignBounds"
+            android:columnCount="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="GPS Status:"
+
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ctrl_fragment_gps_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Not Connected"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:text="Bluetooth Status:"
+                android:textSize="18sp" />
+
+
+
+            <TextView
+                android:id="@+id/ctrl_fragment_bluetooth_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Not Connected"
+                android:textSize="18sp" />
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ctrl_fragment_bluetooth_connect_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_above="@+id/ctrl_fragment_control_button"
+        android:layout_marginBottom="20dp"
+        android:textSize="25sp"
+        android:text="Connect Bluetooth" />
+    <Button
+        android:id="@+id/ctrl_fragment_control_button"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:background="@color/start_recording"
+        android:layout_above="@+id/ctrl_fragment_button_layout"
+        android:layout_marginBottom="20dp"
+        android:textSize="25sp"
+        android:text="Begin Recording" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ctrl_fragment_button_layout"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="?android:attr/dividerVertical" />
+
+        <View
+            android:id="@+id/map_fragment_button_divider"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="?android:attr/dividerVertical" />
+
+        <Button
+            android:id="@+id/stats_fragment_discard_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/map_fragment_button_divider"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/stats_fragment_discard_recording_button" />
+
+        <Button
+            android:id="@+id/stats_fragment_finalise_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/map_fragment_button_divider"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/stats_fragment_finalise_button" />
+    </RelativeLayout>
+
+</RelativeLayout>

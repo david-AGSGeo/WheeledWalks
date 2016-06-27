@@ -1,0 +1,169 @@
+
+body  {
+    background-image: url("/ImageResources/Backgrounds/walks_page.JPG");
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+#devicesHolderDiv {
+    border-radius: 10px;
+    line-height:30px;
+    background-color:#eeeeee;
+    height:97%;
+    width:12%;
+    float:left;
+    padding:5px;
+    margin: 10px;
+}
+
+#devicesDiv {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+#graphContainer {
+    background-color:#eeeeee;
+    border-radius: 10px;
+    width:85%;
+    height:75%;
+    float:right;
+    margin: 10px;
+    visibility: hidden;
+}
+#footer {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    float: right;
+    width:85%;
+    height:20%;
+    padding: 5px;
+    margin: 10px;
+}
+
+#loading {
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   border-radius: 10px;
+   margin: 200px 55%;
+   display: block;
+   opacity: 0.7;
+   background-color: #fff;
+   z-index: 99;
+   text-align: center;
+}
+
+#loading-image {
+ margin: auto;
+  z-index: 100;
+}
+
+
+
+.greenButton {
+ display:block;
+ color: #f57f17;
+ margin: 0 auto;
+ border-radius: 10px;
+ padding: 4px;
+ background-color: green;
+ font-size: 20px;
+
+}
+#FilterCreateDiv {
+ float: left;
+ padding: 5px;
+ text-align: center;
+}
+#FilterContainerDiv {
+ float: left;
+ border-radius: 10px;
+ background-color: #c8e6c9;
+ padding: 5px;
+ overflow-x: auto;
+ white-space: nowrap;
+ height: 100%;
+ width: 80%;
+
+}
+#FilterApplyDiv {
+ float: right;
+ padding: 5px;
+ text-align: center;
+}
+#addFilter {
+ margin: 40px auto;
+}
+
+.deviceCardBackground {
+    border-radius: 10px;
+    overflow: auto;
+    margin: auto;
+    width: auto;
+    color: black;
+    background-color: #c8e6c9;
+    border: 2px solid #f57f17;
+    padding: 0px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.sensorDiv {
+
+    overflow: auto;
+    margin: auto;
+    width: auto;
+    color: black;
+    background-color: #eeeeee;
+    padding: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.sensorTypeText {
+    text-align: center;
+    line-height: 0.9;
+    font-size: 0.7em;
+    margin-top: 1px;
+        margin-bottom: 1px;
+}
+
+.sensorTable {
+    width: 100%;
+    text-align: center;
+    line-height: 0.9;
+    font-size: 0.7em;
+    margin-top: 1px;
+        margin-bottom: 1px;
+}
+
+
+.filterDiv {
+
+    border-radius: 10px;
+        overflow: auto;
+        margin: 3px;
+        height: 95%;
+        display: inline-block;
+        color: black;
+        background-color: #eeeeee;
+        border: 2px solid #f57f17;
+        padding: 4px;
+        text-align: center;
+
+}
+
+.filterButton {
+      display:block;
+      margin: 10px auto;
+      border-radius: 5px;
+      padding: 4px;
+      background-color: #c8e6c9;
+      font-size: 14px;
+}
+
+.dygraph-legend > span.highlight {
+border: 2px solid red;
+}

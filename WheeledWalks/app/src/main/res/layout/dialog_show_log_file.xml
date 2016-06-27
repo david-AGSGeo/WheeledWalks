@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <CheckBox
+                android:id="@+id/show_log_dialog_accel_cb"
+                android:checked="true"
+                android:text="show Accelerometer" />
+
+            <CheckBox
+                android:id="@+id/show_log_dialog_gps_cb"
+                android:checked="true"
+                android:text="show GPS " />
+
+            <CheckBox
+                android:id="@+id/show_log_dialog_markers_cb"
+                android:checked="true"
+                android:text="show Markers" />
+
+            <CheckBox
+                android:id="@+id/show_log_dialog_heartrate_cb"
+                android:checked="true"
+                android:text="show Heart Rate" />
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/show_log_dialog_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/windowBackground"
+        android:maxLines="16"
+        android:minLines="16"
+        android:scrollbars="vertical"
+        android:textColor="@android:color/black"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/walk_description">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@android:color/black" />
+
+        <Button
+            android:id="@+id/show_log_dialog_ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/view_log_dialog_ok_button" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+
+
+    <string name="app_name">WheeledWalks Viewer</string>
+    <string name="google_app_id">69164650957</string>
+
+
+    <string-array name="gradient_source_array">
+        <item>Difficulty</item>
+        <item>Steepness</item>
+        <item>Roughness</item>
+        <item>Roll</item>
+    </string-array>
+
+</resources>

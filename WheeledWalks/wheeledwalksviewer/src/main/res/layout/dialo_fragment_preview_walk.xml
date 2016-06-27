@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/preview_map_fragment_container"/>
+
+
+        <ToggleButton
+            android:id="@+id/map_step_toggle_button"
+            style="@style/stepToggleButton"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_step_toggle_bg"
+            android:checked="true" />
+
+        <ToggleButton
+            android:id="@+id/map_obstacle_toggle_button"
+            style="@style/obstacleToggleButton"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/map_step_toggle_button"
+            android:background="@drawable/ic_obstacle_toggle_bg"
+            android:checked="true" />
+
+        <ToggleButton
+            android:id="@+id/map_path_toggle_button"
+            style="@style/pathToggleButton"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/map_obstacle_toggle_button"
+            android:background="@drawable/ic_path_toggle_bg"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/gradient_spinner_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginStart="40dp"
+            android:layout_alignParentBottom="true"
+            android:textSize="16sp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@android:color/black"
+            android:text="Gradient source:"/>
+
+        <Spinner
+            android:layout_toEndOf="@+id/gradient_spinner_label"
+            android:id="@+id/preview_gradient_select_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:entries="@array/gradient_source_array"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<backends>
+    <backend name="walkprocessing">
+        <class>B2</class>
+        <options>
+            <dynamic>false</dynamic>
+            <public>false</public>
+        </options>
+    </backend>
+</backends>

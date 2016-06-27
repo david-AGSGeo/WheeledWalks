@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/finalise_walk_name_label"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/finalise_walk_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/finalise_walk_location_label"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/finalise_walk_location_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/finalise_walk_date_label"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/finalise_walk_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+
+                android:layout_marginTop="10dp"
+                android:text="@string/finalise_walk_distance_label"
+
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/finalise_walk_Distance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+
+                android:layout_marginTop="10dp"
+                android:text="@string/finalise_walk_rating_label"
+
+                android:textSize="18sp" />
+
+            <RatingBar
+                android:id="@+id/finalise_walk_rating_bar"
+                style="@style/walkRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:focusable="true"
+
+                android:numStars="5" />
+
+
+        </GridLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TextView
+                android:id="@+id/finalise_walk_grade_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="start"
+                android:layout_marginStart="30dp"
+                android:text="@string/finalise_walk_grade_label"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/finalise_walk_grade_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/finalise_walk_grade_label"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <SeekBar
+                android:id="@+id/finalise_walk_grade_seekbar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:max="4" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/finalise_walk_chose_image_btn"
+            android:layout_width="180dp"
+
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/finalise_walk_thumbnail_content_description"
+            android:src="@drawable/ic_choose_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/finalise_walk_description_lable"
+                android:textSize="18sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/finalise_walk_description_microphone_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/ic_microphone" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/finalise_walk_description_et"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:minLines="3" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/walk_description">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="?android:attr/dividerVertical" />
+
+        <Button
+            android:id="@+id/finalise_walk_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/finalise_walk_finalise_btn" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

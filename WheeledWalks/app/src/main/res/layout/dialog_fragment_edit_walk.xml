@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="300dp"
+
+    >
+
+    <GridLayout
+        android:id="@+id/edit_dialog_grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:columnCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/edit_dialog_fragment_name_label" />
+
+        <EditText
+            android:id="@+id/edit_activity_walk_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/edit_dialog_fragment_rating_label" />
+
+        <RatingBar
+            android:id="@+id/edit_activity_walk_rating"
+            style="@style/walkRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:isIndicator="false"
+            android:numStars="5" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/edit_dialog_fragment_grade_label" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/edit_dialog_fragment_grade_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+
+                />
+
+            <SeekBar
+                android:id="@+id/edit_dialog_fragment_grade_seekbar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="70dp"
+                android:max="4" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/edit_dialog_fragment_description_label" />
+
+        <EditText
+            android:id="@+id/edit_activity_walk_description"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:gravity="top|start"
+            android:maxLines="4"
+            android:minLines="4"
+            android:scrollbars="vertical"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/edit_dialog_fragment_length_label" />
+
+        <EditText
+            android:id="@+id/edit_activity_walk_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/edit_dialog_fragment_locality_label" />
+
+        <EditText
+            android:id="@+id/edit_activity_walk_locality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+    </GridLayout>
+
+
+    <ImageButton
+        android:id="@+id/edit_activity_walk_image"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/edit_dialog_grid_layout"
+        android:layout_margin="4dp" />
+
+    <RelativeLayout
+        android:id="@+id/edit_dialog_top_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edit_activity_walk_image"
+
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@android:color/black" />
+
+        <View
+            android:id="@+id/edit_dialog_button_divider_top"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="@android:color/black" />
+
+        <Button
+            android:id="@+id/edit_activity_Delete_walk_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/edit_dialog_button_divider_top"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/edit_dialog_fragment_delete_button"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/edit_activity_view_log_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/edit_dialog_button_divider_top"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/edit_dialog_fragment_view_log_button"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/edit_dialog_top_button_layout">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@android:color/black" />
+
+        <View
+            android:id="@+id/edit_dialog_button_divider_bottom"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="@android:color/black" />
+
+        <Button
+            android:id="@+id/edit_activity_save_changes_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/edit_dialog_button_divider_bottom"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/edit_dialog_fragment_save_button"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/edit_activity_discard_changes_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/edit_dialog_button_divider_bottom"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/edit_dialog_fragment_discard_changes_button"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

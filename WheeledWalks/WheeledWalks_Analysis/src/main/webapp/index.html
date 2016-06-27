@@ -1,0 +1,58 @@
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Wheeledwalks Analysis</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="/Stylesheets/homepage.css">
+</head>
+<body role="document" style="padding-top: 70px;">
+
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Wheeledwalks Home</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="https://wheeledwalks.firebaseio.com/">Firebase Data</a></li>
+                <li><a href="https://console.cloud.google.com/logs?_ga=1.90285150.578559606.1462420005&project=wheeledwalks&service=appengine.googleapis.com&key1=default&key2=1&minLogLevel=200&expandAll=false&logName=appengine.googleapis.com%2Frequest_log&lastVisibleTimestampNanos=1463094113232336000">Project Logging</a></li>
+                <li><a href="/WalkProcessingServlet">Processing Servlet</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container theme-showcase" role="main">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 align="center">Welcome to</h1>
+                <h1 align="center">WheeledWalks Cloud Analysis</h1>
+                <p>This website is the Online interface into the WheeledWalks App by David Lee.
+                    Please choose a walk to process or review</p>
+                <br/>
+                <p></p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="WalkCardDiv" id="WalkCardDiv">
+    <div id="loading">
+        <img id="loading-image" src="ImageResources/ajax-loader.gif" alt="Loading..." />
+    </div>
+    <!--- All Walk cards get inserted here --->
+</div>
+
+<script src="HomepageScripts.js"></script>
+</body>
+</html>

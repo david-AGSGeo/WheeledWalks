@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+
+    </style>
+
+    <style name="tabtextcolor" parent="@android:style/Widget.Holo.Light.ActionBar.TabText">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+    <style name="walkRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+    </style>
+
+    <style name="Widget.Button.ToggleStep" parent="android:Widget">
+        <item name="android:background">@drawable/ic_step_toggle_bg</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+    </style>
+
+    <style name="stepToggleButton" parent="Theme.AppCompat">
+        <item name="android:buttonStyleToggle">@style/Widget.Button.ToggleStep</item>
+        <item name="android:textOn" />
+        <item name="android:textOff" />
+    </style>
+
+    <style name="Widget.Button.ToggleObstacle" parent="android:Widget">
+        <item name="android:background">@drawable/ic_obstacle_toggle_bg</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+    </style>
+
+    <style name="obstacleToggleButton" parent="Theme.AppCompat">
+        <item name="android:buttonStyleToggle">@style/Widget.Button.ToggleObstacle</item>
+        <item name="android:textOn" />
+        <item name="android:textOff" />
+    </style>
+
+    <style name="Widget.Button.TogglePath" parent="android:Widget">
+        <item name="android:background">@drawable/ic_path_toggle_bg</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+    </style>
+
+    <style name="pathToggleButton" parent="Theme.AppCompat">
+        <item name="android:buttonStyleToggle">@style/Widget.Button.TogglePath</item>
+        <item name="android:textOn" />
+        <item name="android:textOff" />
+    </style>
+
+
+</resources>

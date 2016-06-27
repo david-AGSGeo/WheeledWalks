@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/config_sensortag_dialog_alias_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="Device Alias: "
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/config_sensortag_dialog_alias_edittext"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alignmentMode="alignBounds"
+        android:columnCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="Connect this Sensor:"
+
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/config_sensortag_dialog_connect_chkbx"
+            android:layout_marginStart="20dp"
+            />
+
+
+
+    </GridLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/config_sensortag_dialog_alias_edittext">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:background="@android:color/black" />
+
+        <View
+            android:id="@+id/config_sensortag_dialog_button_divider"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:background="@android:color/black" />
+
+        <Button
+            android:id="@+id/config_sensortag_dialog_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/config_sensortag_dialog_button_divider"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/config_sensortag_dialog_save_config_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/config_sensortag_dialog_button_divider"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Save Config" />
+    </RelativeLayout>
+
+</LinearLayout>

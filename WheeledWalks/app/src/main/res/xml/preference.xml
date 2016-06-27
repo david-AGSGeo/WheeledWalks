@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Data Management" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/preference_allow_walk_delete"
+        android:summary="Allows the user to delete single walks via the edit interface."
+        android:title="Delete Walks Option" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/preference_allow_delete_all"
+        android:summary="Allows the user to delete the entire database from the navigation drawer"
+        android:title="Delete All Option" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/preference_confirm_deletions"
+        android:summary="Enables a prompt at each deletion asking the user to confirm the operation"
+        android:title="Confirm Deletions" />
+
+    <PreferenceCategory android:title="Testing Options" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/preference_repopulate_database"
+        android:summary="Checks if the database is empty and fills it with dummy walks "
+        android:title="Repopulate Database When Empty" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/preference_populate_new_walk"
+        android:summary="User does not have to enter any information to start or finalise a walk. All data is auto populated with default values"
+        android:title="Auto-Populate New Walk Info" />
+</PreferenceScreen>

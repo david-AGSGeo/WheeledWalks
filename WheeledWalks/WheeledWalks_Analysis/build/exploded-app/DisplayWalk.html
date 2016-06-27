@@ -1,0 +1,81 @@
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script src="dygraph-combined-dev.js"></script>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Wheeledwalks Analysis</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="/Stylesheets/DisplayWalk.css">
+</head>
+<body role="document" style="padding-top: 70px;">
+
+
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/index.html">WheeledWalks Home</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="https://console.developers.google.com">Google Developers Console</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="devicesHolderDiv">
+    <div id = "devicesDiv">
+
+    </div>
+    <input id="refreshButton" class="greenButton" type="button" value="Update Graph" onclick="updateGraph(false);" />
+</div>
+<div id="loading">
+    <img id="loading-image" src="ImageResources/ajax-loader.gif" alt="Loading..." />
+</div>
+<div id="graphContainer">
+
+</div>
+
+<div id="footer">
+
+    <div id="FilterCreateDiv">
+        <h4>Select Filter:</h4>
+        <br/>
+        <select id="filterTypes">
+            <option value="High Pass">High Pass</option>
+            <option value="Low Pass">Low Pass</option>
+            <option value="Normalize">Normalize</option>
+            <option value="Rectify">Rectify</option>
+            <option value="Gradient">Gradient</option>
+        </select>
+        <input id="addFilter" class="greenButton" type="button" value="Add Filter" onclick="addFilter();" />
+    </div>
+
+    <div id="FilterContainerDiv">
+
+    </div>
+
+    <div id="FilterApplyDiv">
+        <h4>Select Output:</h4>
+        <select id="outputTypeCombobox">
+            <option value="steepness">Steepness</option>
+            <option value="roughness">Roughness</option>
+            <option value="roll">Roll</option>
+        </select>
+        <br/>
+        <input id="exportFilters" class="greenButton" type="button" value="Export Filters" onclick="exportFilters();" />
+        <br/>
+        <input id="discardAllFilters" class="greenButton" type="button" value="Discard All Filters" onclick="discardFilters();" />
+
+    </div>
+</div>
+
+<script src="DisplayWalkScripts.js"></script>
+</body>
+</html>
